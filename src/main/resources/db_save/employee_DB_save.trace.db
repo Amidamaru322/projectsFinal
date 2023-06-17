@@ -1,0 +1,98 @@
+2023-06-15 16:25:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found (this database is empty); SQL statement:
+select e1_0.employee_id,e1_0.is_active,e1_0.name,e1_0.phone_number,e1_0.surname from employee e1_0 [42104-214]
+2023-06-16 12:09:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]EMPLOYEE"; ожидалось "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]EMPLOYEE"; expected "EXPLAIN, EXECUTE"; SQL statement:
+EMPLOYEE [42001-214]
+2023-06-16 14:09:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]SELECTUSERS"; ожидалось "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"
+Syntax error in SQL statement "[*]SELECTUSERS"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+SELECTUSERS [42001-214]
+2023-06-16 15:55:18 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM USERS \000d\000ainsert [*]into USERS  (name, surname, email, password, username)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd'),"
+Syntax error in SQL statement "SELECT * FROM USERS \000d\000ainsert [*]into USERS  (name, surname, email, password, username)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd'),"; SQL statement:
+SELECT * FROM USERS 
+insert into USERS  (name, surname, email, password, username)
+values 
+('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),
+('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),
+('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd'), [42000-214]
+2023-06-16 15:55:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM USERS \000d\000ainsert [*]into USERS  (name, surname, email, password, username)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"
+Syntax error in SQL statement "SELECT * FROM USERS \000d\000ainsert [*]into USERS  (name, surname, email, password, username)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"; SQL statement:
+SELECT * FROM USERS 
+insert into USERS  (name, surname, email, password, username)
+values 
+('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),
+('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),
+('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd') [42000-214]
+2023-06-16 15:56:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"
+Syntax error in SQL statement "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000avalues \000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"; SQL statement:
+SELECT * FROM USERS 
+INSERT INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)
+values 
+('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),
+('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),
+('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd') [42000-214]
+2023-06-16 15:56:34 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000aVALUES\000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"
+Syntax error in SQL statement "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000aVALUES\000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"; SQL statement:
+SELECT * FROM USERS 
+INSERT INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)
+VALUES
+('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),
+('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),
+('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd') [42000-214]
+2023-06-16 15:56:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000aVALUES\000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"
+Syntax error in SQL statement "SELECT * FROM USERS \000d\000aINSERT [*]INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)\000d\000aVALUES\000d\000a('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),\000d\000a('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),\000d\000a('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd')"; SQL statement:
+SELECT * FROM USERS 
+INSERT INTO USERS  (NAME, SURNAME, EMAIL, PASSWORD, USERNAME)
+VALUES
+('Andrei', 'Ciobanu', 'mihaylo.29ge@mail.ru', '1234', 'amidamaru'),
+('Alex', 'Deer', 'alexdeer@mail.ru', '12412', 'AlexDeer'),
+('Vadim', 'Peev', 'great@mail.ru', '1245431', 'PeevVAd') [42000-214]
+2023-06-16 16:01:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:03:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:03:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:03:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:03:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:03:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:04:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:05:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:05:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:06:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:06:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:11:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-06-16 16:18:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
